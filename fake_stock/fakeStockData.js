@@ -1,5 +1,5 @@
 
-export default function getStockData() {
+export function getStockData() {
     return {
         name: 'Bombay Stock Exchange',
         symbol: 'BSE',
@@ -9,8 +9,7 @@ export default function getStockData() {
 }
 
 function getRandomNum() {
-    const randomNum = Math.random(0, 3) * 3
-    console.log(randomNum.toFixed(2))
+    return (Math.random() * 3).toFixed(2)
 }
 
 function getLiveTime() {
