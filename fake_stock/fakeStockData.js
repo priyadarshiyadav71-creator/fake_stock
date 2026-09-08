@@ -1,0 +1,23 @@
+
+export default function getStockData() {
+    return {
+        name: 'Bombay Stock Exchange',
+        symbol: 'BSE',
+        price: getRandomNum(),
+        time: getLiveTime()
+    }
+}
+
+function getRandomNum() {
+    const randomNum = Math.random(0, 3) * 3
+    console.log(randomNum.toFixed(2))
+}
+
+function getLiveTime() {
+    const liveTime = new Date()
+    const hh = liveTime.getHours()
+    const mm = liveTime.getMinutes()
+    const ss = liveTime.getSeconds()
+
+    return `${hh}:${mm}:${ss}`
+}
