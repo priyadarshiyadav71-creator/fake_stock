@@ -12,7 +12,8 @@ body {
 }
 #show-stock-detail {
   border: 1px solid;
-  margin: 90px;
+  width: 350px;
+  margin: 90px auto;
   padding: 10px;
   border-radius: 10px;
   background-color: #b8b3b3;
